@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BMI Calculator</h1>
+    <p>Body Mass Index (BMI) is a simple calculation using a person's height and weight. It is a useful tool to estimate a healthy body weight based on an individual's height.</p>
+    <p>Enter your information below to calculate your BMI:</p>
+    <div class="form-container">
+      <div class="input-form">
+        <h3>BMI Form</h3>
+        <label for="gender">Gender:</label>
+        <select id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <label for="age">Age (years):</label>
+        <input type="number" id="age" min="0">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" min="0">
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" min="0">
+        <button class="calculate" onclick="calculateBMI()">Calculate BMI</button>
+        <button class="reset" onclick="resetForm()">Reset</button>
+      </div>
+      <div class="result-form">
+        <h3>Your BMI</h3>
+        <div id="result">BMI Index</div>
+        <div id="interpretation"></div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
